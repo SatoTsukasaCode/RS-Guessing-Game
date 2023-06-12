@@ -15,7 +15,7 @@ fn main() {
         .read_line(&mut guess)
         .expect("can't read line");
 
-   if guess == number.expect("can't convert").to_string() {
+   if guess == number.expect("can't convert").to_string() + "\n"{
         println!("Guess is correct! it was {guess}");
    } else {
         println!("guess was not right, it was {:?}", number.expect("can't convert").to_string());
